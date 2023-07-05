@@ -1,0 +1,15 @@
+[project]
+name = "{{ cookiecutter.project_slug }}"
+version = "0.0.1"
+requires-python =">=3.8"
+authors = [
+  {name = "Vikram Meyer", email = "vjmeyer20@gmail.com"},
+]
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = ["{{ cookiecutter.project_slug }}/*"]
